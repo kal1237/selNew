@@ -19,7 +19,7 @@ public class LoginTestCrm extends BaseClass{
 	{
 		LoginPage lp=PageFactory.initElements(driver,LoginPage.class);
 		lp.loginToPortal(excel.getStringData("Login", 0, 0),excel.getStringData("Login", 0, 1));
-		
+		System.out.println("test");
 		
 	//initElements
 	

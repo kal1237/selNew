@@ -13,6 +13,7 @@ public class AllCourses {
 	{
 		this.driver=lDriver;
 	
+	
 	}
 	@FindBy(xpath="//*[@id=\"primary_menu\"]/a") WebElement allCourses;
 	@FindBy(id="primary-menu") WebElement element;
