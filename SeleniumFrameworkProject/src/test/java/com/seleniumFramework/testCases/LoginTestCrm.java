@@ -21,6 +21,8 @@ public class LoginTestCrm extends BaseClass{
 		lp.loginToPortal(excel.getStringData("Login", 0, 0),excel.getStringData("Login", 0, 1));
 		System.out.println("test");
 		
+		System.out.println("test2");
+		
 	//initElements
 	
 	}
