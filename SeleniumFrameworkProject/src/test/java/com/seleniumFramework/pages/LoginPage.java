@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+//To check the login functionality to portal
+
 public class LoginPage {
 
 	WebDriver driver;

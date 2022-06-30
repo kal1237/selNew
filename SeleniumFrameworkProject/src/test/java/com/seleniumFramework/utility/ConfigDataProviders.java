@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 
+//gets the browser and url details from config properties file
+
 public class ConfigDataProviders {
 	Properties pro;
 	public ConfigDataProviders()

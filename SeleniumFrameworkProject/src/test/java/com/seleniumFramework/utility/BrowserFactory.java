@@ -4,9 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+//gets the browser details
 public class BrowserFactory {
 
 	public static WebDriver startApplication(WebDriver driver,String browserName,String appUrl)
@@ -17,15 +19,11 @@ public class BrowserFactory {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 	         driver = new ChromeDriver();
 		}
-		else if(browserName.equals("Firefox"))
+		
+		else if(browserName.equals("Edge"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./Drivers/geckodriver.exe");
-	         driver = new FirefoxDriver();
-		}
-		else if(browserName.equals("IE"))
-		{
-			System.setProperty("webdriver.chrome.driver", "./Drivers/IEDriverServer.exe");
-	         driver = new InternetExplorerDriver();
+			System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
+	         driver = new EdgeDriver();
 		}
 		else
 		{
